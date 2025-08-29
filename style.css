@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+  margin-left: 15px;
+}
+
+.menu {
+  font-size: 28px;
+  color: white;
+  cursor: move;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  transition: all 0.5s;
+}
+
+li{
+    padding: 0 20px;
+    transition: all 0.5s;
+}
+/* hover(para tudo que o mouse passar por cima mudar)*/
+li:hover{
+ cursor: pointer; /*Some o mouse e aparece uma maozinha*/
+ opacity: 0.8;/*deixa o item mais claro ao passar o mouse*/
+ background-color: #FFC107; 
+ font-size: 20px; /*para dar um zoom quando o mouse passar*/
+}
+
+nav p {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-login a {
+  background: #FFC107;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-login a:hover {
+  background: #e6a800;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url("hamburguer.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: left;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.buttons:hover {
+  display: flex;
+  gap: 20px;
+  transition: 0.7;
+  cursor: all-scroll;
+}
+
+.btn.white {
+  background: white;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.white:hover {
+  background: #f2f2f2;
+}
+footer{
+    background-color: #fff;
+    color: #222;
+    padding: 30px 20px;
+}
+
+.footer-container{
+    display: flex;
+    /* separa os 3 blocos da div que a gnt criou */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    /*para colocar espaçamento para baixo*/
+    max-width: 1200px;
+    /*  define a largura máxima que um elemento pode ter em uma página web, garantindo que ele não se espalhe demais em telas grandes */
+    margin: auto;
+}
+
+ .social-icons a{
+    color: #000000;
+    /* para colorir os icones */
+    margin-right: 15px;
+    /* para dar espaço nos icones */
+    font-size: 20px;
+    /* para aumentar o tamanho dos icones */
+    transition: 0.7s;
+    /* definição do tempo para dar efeito quando passar ou deixar o mouse em cima */
+    justify-content: flex-end;
+ }
+
+ .social-icons a:hover{
+    color: #db0303;
+    /* para colocar cor quando o mouse passar ou ficar em cima */
+ }
